@@ -7,5 +7,8 @@
 # predict
 /home/adlerhu/.local/share/virtualenvs/bitcoin-7MbCzdvc/bin/python /home/adlerhu/bitcoin/predict.py &&
 
+# result
+/home/adlerhu/.local/share/virtualenvs/bitcoin-7MbCzdvc/bin/python /home/adlerhu/bitcoin/result.py &&
+
 # charts
 /home/adlerhu/.local/share/virtualenvs/bitcoin-7MbCzdvc/bin/python /home/adlerhu/bitcoin/charts.py
