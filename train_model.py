@@ -71,8 +71,8 @@ def prepare_data(raw_data):
 # generate training raw data
 def get_dataset(connection, start_date_str, end_date_str):
     sql_str = f'''SELECT h.bitcoin_price, h.gold_price, h.oil_price, b.bitcoin_price as 'future_price'
-                    FROM `historical_data` as h 
-                    JOIN `historical_data` as b
+                    FROM historical_data as h 
+                    JOIN historical_data as b
                     ON h.future_date = b.date 
                     WHERE h.date BETWEEN \'{start_date_str}\' AND \'{end_date_str}\';'''
 

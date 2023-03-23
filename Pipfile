@@ -12,6 +12,9 @@ pytz = "*"
 lxml = "*"
 keras = "*"
 tensorflow = "*"
+pyecharts = "*"
+flask = "*"
+flask-bootstrap = "*"
 
 [dev-packages]
 

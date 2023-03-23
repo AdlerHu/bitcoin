@@ -8,8 +8,8 @@ def update_historical_data(cursor):
     # 插入歷史資料表
     sql_str = f'''
         INSERT INTO historical_data (date, bitcoin_price)
-        SELECT b.date, b.price FROM `bitcoin` as b WHERE ( 
-        SELECT COUNT(1) FROM `historical_data` as h WHERE b.date = h.date) = 0;    
+        SELECT b.date, b.price FROM bitcoin as b WHERE ( 
+        SELECT COUNT(1) FROM historical_data as h WHERE b.date = h.date) = 0;    
     '''
     try:
         cursor.execute(sql_str)

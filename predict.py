@@ -10,7 +10,7 @@ from utils.config import connect_db
 
 # insert the prediction table
 def insert_prediction(cursor, date, prediction):
-    sql_str = f'''INSERT INTO `prediction`(`date`, `prediction`) VALUES (\'{date}\', {prediction});'''
+    sql_str = f'''INSERT INTO prediction (date, prediction) VALUES (\'{date}\', {prediction});'''
     try:
         cursor.execute(sql_str)
     except Exception as err:
@@ -34,8 +34,8 @@ def predict(model, predict_data_list):
 
 def get_unpredicted_data(connection):
     sql_str = '''SELECT h.future_date, h.bitcoin_price, h.gold_price, h.oil_price 
-        FROM `historical_data` as h 
-        WHERE ( SELECT COUNT(1) FROM `result` as r WHERE h.future_date = r.date) = 0;'''
+        FROM historical_data as h 
+        WHERE ( SELECT COUNT(1) FROM result as r WHERE h.future_date = r.date) = 0;'''
     data_row = pd.read_sql_query(sql_str, connection)    
     return data_row
 

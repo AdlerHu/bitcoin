@@ -20,7 +20,7 @@ def insert_target_table(raw_data, cursor, table):
 
     for i in range(len(date_list) -1):
         date_str = datetime.strptime(date_list[i], '%b %d, %Y').strftime('%Y-%m-%d')
-        sql_str = f'INSERT INTO {table} (`date`, `price`) VALUES (\"{date_str}\", {price_list[i]});'
+        sql_str = f'INSERT INTO {table} (date, price) VALUES (\"{date_str}\", {price_list[i]});'
 
         try:
             cursor.execute(sql_str)
@@ -41,7 +41,7 @@ def crawler(url, cursor, table):
 
 # get the start date & end date
 def get_date(cursor, table):
-    sql_str = f'SELECT `date` FROM {table} ORDER BY `date` DESC LIMIT 1;'
+    sql_str = f'SELECT date FROM {table} ORDER BY date DESC LIMIT 1;'
     cursor.execute(sql_str)
     data_row = cursor.fetchall()
 

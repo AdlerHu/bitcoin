@@ -55,7 +55,7 @@ def insert_target_table(cursor, raw_data, table):
 
     for i in range(len(date_list) -1):
         date_str = datetime.strptime(date_list[i], '%b %d, %Y').strftime('%Y-%m-%d')
-        sql_str = f'INSERT INTO {table} (`date`, `price`) VALUES (\"{date_str}\", {price_list[i]});'
+        sql_str = f'INSERT INTO {table} (date, price) VALUES (\"{date_str}\", {price_list[i]});'
 
         try:
             cursor.execute(sql_str)
