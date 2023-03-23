@@ -3,3 +3,6 @@ secrets/*.txt
 
 # connect db
 utils/config.py
+
+# pycache
+*/__pychcae__/
