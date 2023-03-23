@@ -5,4 +5,7 @@
 /home/adlerhu/.local/share/virtualenvs/bitcoin-7MbCzdvc/bin/python /home/adlerhu/bitcoin/update_latest_data.py &&
 
 # predict
-/home/adlerhu/.local/share/virtualenvs/bitcoin-7MbCzdvc/bin/python /home/adlerhu/bitcoin/predict.py
+/home/adlerhu/.local/share/virtualenvs/bitcoin-7MbCzdvc/bin/python /home/adlerhu/bitcoin/predict.py &&
+
+# charts
+/home/adlerhu/.local/share/virtualenvs/bitcoin-7MbCzdvc/bin/python /home/adlerhu/bitcoin/charts.py
