@@ -5,4 +5,4 @@ secrets/*.txt
 utils/config.py
 
 # pycache
-*/__pychcae__/
+*.pyc
