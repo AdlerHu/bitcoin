@@ -11,7 +11,7 @@ from utils.config import connect_db
 
 # 得到起始日、終止日的 2 個 list
 def get_period():
-    years = [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]
+    years = [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
     quarters = ['Q1', 'Q2', 'Q3', 'Q4']
     start_date_list = []
     end_date_list = []
