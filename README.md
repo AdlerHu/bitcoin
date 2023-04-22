@@ -1,5 +1,7 @@
 # bitcoin
 
+Predicting the Bitcoin price 7 days ahead on a daily basis.
+
 1. Create two files (secrets/mysql_password.txt, secrets/mysql_root_password.txt) to store DB password
 
 2. Start database
