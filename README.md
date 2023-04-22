@@ -4,7 +4,8 @@ Predicting the Bitcoin price 7 days ahead on a daily basis.
 
 1. Create two files (secrets/mysql_password.txt, secrets/mysql_root_password.txt) to store DB password
 
-2. Start database
+2. Create docker volume and tart database
+    docker volume create mysql
     docker compose -f mysql.yml up -d
 
 3. Create a file (utils/config.py) to connect db
