@@ -6,9 +6,9 @@ Predicting the Bitcoin price 7 days ahead on a daily basis.
 
 2. Create docker volume and start database:
     - Create a docker volume:
-        docker volume create mysql
+        - docker volume create mysql
     - Start the database using docker-compose:
-        docker compose -f mysql.yml up -d
+        - docker compose -f mysql.yml up -d
 
 3. Create a file (utils/config.py) to connect db
 
